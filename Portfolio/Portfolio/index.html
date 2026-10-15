@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohail Portfolio</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./assets/fontcss.css" rel="stylesheet" />
+  </head>
+  <body class="theme-light">
+    <div class="orb orb-one" aria-hidden="true"></div>
+    <div class="orb orb-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top">Muhammad Sohail</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="siteMenu">
+          <a href="#profile">Profile</a>
+          <a href="#services">Services</a>
+          <a href="#academics">Academics</a>
+          <a href="#cv">CV</a>
+          <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" id="themeToggle" type="button">Dark Mode</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Software Engineer</p>
+          <h1>Building reliable web apps and software that ship.</h1>
+          <p class="hero-subtitle">
+            I help teams and startups design, build, and deploy web products with clean UX and scalable code.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Start a Conversation</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="card-title">Quick Stats</p>
+          <div class="stat-grid">
+            <div>
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div>
+              <span class="stat-number">3</span>
+              <span class="stat-label">Service Areas</span>
+            </div>
+            <div>
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-carousel" aria-label="Service Highlights">
+        <div class="carousel-track" id="heroCarousel">
+          <article class="carousel-slide is-active">
+            <img class="carousel-image" src="./images/SW.jpeg" alt="Software engineering workspace" />
+            <p class="eyebrow">Software Engineering</p>
+            <h2>Reliable Systems</h2>
+            <p>Clean architecture, maintainable code, and scalable software foundations.</p>
+          </article>
+          <article class="carousel-slide">
+            <img class="carousel-image" src="./images/web.jpeg" alt="Web design and development setup" />
+            <p class="eyebrow">Web Design and Development</p>
+            <h2>Web Experiences</h2>
+            <p>Responsive, accessible websites and dashboards built for modern users.</p>
+          </article>
+          <article class="carousel-slide">
+            <img class="carousel-image" src="./images/mob.jpeg" alt="Mobile app development preview" />
+            <p class="eyebrow">Mobile Apps Development</p>
+            <h2>Mobile-First Delivery</h2>
+            <p>Cross-platform app interfaces with smooth, intuitive user flows.</p>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carouselPrev" type="button">Prev</button>
+          <div class="carousel-dots" id="carouselDots" aria-hidden="true"></div>
+          <button class="carousel-btn" id="carouselNext" type="button">Next</button>
+        </div>
+      </section>
+
+      <section class="section profile" id="profile">
+        <div class="profile-card">
+          <img src="images/prof.jpeg" alt="Portrait of Muhammad Sohail" />
+          <div class="profile-info">
+            <p class="eyebrow">Personal Profile</p>
+            <h2>Muhammad Sohail</h2>
+            <p class="meta">BCS Class of 2025</p>
+            <p>
+              Computer Science student focused on building production ready
+              web applications. I work on front-end experiences, backend logic,
+              and full-stack solutions that solve real business problems. I care
+              about clean architecture, performance, and maintainable code.
+            </p>
+            <div class="badge-row">
+              <span class="badge">Software Engineering</span>
+              <span class="badge">Web Design and Development</span>
+              <span class="badge">Mobile Apps Development</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Services</p>
+            <h2>What I Deliver</h2>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Landing pages, dashboards, and responsive sites built with modern HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="service-card">
+            <h3>Software Solutions</h3>
+            <p>End-to-end apps with data modeling, APIs, and scalable architecture.</p>
+          </div>
+          <div class="service-card">
+            <h3>UI/UX Refinement</h3>
+            <p>Design systems, interaction design, and accessibility-focused improvements.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section academics" id="academics">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Academic Background</p>
+            <h2>Learning Journey</h2>
+          </div>
+          <div class="table-controls">
+            <input type="search" id="searchInput" placeholder="Search by school or qualification" />
+            <select id="levelFilter">
+              <option value="all">All Levels</option>
+              <option value="Matric">Matric</option>
+              <option value="College">College</option>
+              <option value="University">University</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="academicsTable">
+            <thead>
+              <tr>
+                <th data-key="level">Level</th>
+                <th data-key="school">School</th>
+                <th data-key="qualification">Qualification</th>
+                <th data-key="year">Year</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section cv" id="cv">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Interactive CV Viewer</p>
+            <h2>My CV in the Browser</h2>
+          </div>
+          <a class="btn" id="cvLink">Open CV</a>
+        </div>
+        <div class="cv-panel" id="cvPanel">
+          <div class="cv-toolbar">
+            <span>CV Preview</span>
+            <button id="closeCv" type="button">Close</button>
+          </div>
+          <iframe id="cvViewer" title="CV Viewer"></iframe>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Progress Tracker</p>
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div class="progress-grid">
+          <div class="progress-card" data-progress="100">
+            <h3>Personal Portfolio</h3>
+            <p>Complete Personal Portfolio website.</p>
+            <div class="progress-bar">
+              <span></span>
+            </div>
+            <span class="progress-value">0%</span>
+          </div>
+          <div class="progress-card" data-progress="100">
+            <h3>(Sample) Digital Khata Mobile Application for a Shop</h3>
+            <p>Mobile Application Development for digitising Khata for a Shop.</p>
+            <div class="progress-bar">
+              <span></span>
+            </div>
+            <span class="progress-value">0%</span>
+          </div>
+          <div class="progress-card" data-progress="50">
+            <h3>(Sample) Pharmacy Web Application</h3>
+            <p>Fully functional Web application for Inventory management for a Pharmacy.</p>
+            <div class="progress-bar">
+              <span></span>
+            </div>
+            <span class="progress-value">0%</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Gallery</p>
+          </div>
+          <div class="gallery-controls">
+            <button id="prevGallery" type="button">Prev</button>
+            <button id="nextGallery" type="button">Next</button>
+          </div>
+        </div>
+        <div class="gallery-frame">
+          <img id="galleryImage" src="images/uet 0.jpg" alt="Project preview" />
+          <div class="gallery-caption" id="galleryCaption">UET Abbotabad Campus</div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let us Build Together</h2>
+          </div>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="input-group">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed and built by Muhammad Sohail (BCS 1st Semester). All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
